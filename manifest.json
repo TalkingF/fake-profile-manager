@@ -1,0 +1,11 @@
+{
+    "name": "Fake Profile Manager",
+    "version": "1.0.0",
+    "description": "Generate Random Identifiers For Profiles",
+    "manifest_version": 3,
+    "author": "Talking F",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Generator"
+    }
+}

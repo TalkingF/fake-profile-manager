@@ -1,0 +1,37 @@
+:root {
+    --primary: rgb(45, 45, 72);
+}
+
+body {
+    min-width: 500px;
+    min-height: 400px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    font-family: 'Assistant', sans-serif;
+}
+
+#name-section {
+    margin: 4px;
+    border: solid;
+    border-radius: 8px;
+}
+
+.name-container {
+    margin: 8px 4px;
+    font-size: 1.3rem;
+    border: solid;
+    display: flex;
+}
+
+.refresh-button {
+    height: 40px;
+    align-self: center;
+    margin-left: 100px;
+}
+
+.generated-name {
+    margin-left: 10px;
+}
