@@ -1,12 +1,14 @@
 :root {
     --primary: rgb(45, 45, 72);
+    --secondary: rgb(255,255,255);
+
 }
 
 body {
     min-width: 500px;
     min-height: 400px;
     background-color: var(--primary);
-    color: white;
+    color: var(--secondary);
     font-size: 1rem;
     padding: 0;
     margin: 0;
@@ -29,9 +31,22 @@ body {
 .refresh-button {
     height: 40px;
     align-self: center;
-    margin-left: 99px;
+    flex: 0.5;
+    margin-right: 10px;
+    background-color: var(--secondary);
+    border: none;
 }
 
 .generated-name {
     margin-left: 10px;
+    flex: 1;
+}
+
+.label-name {
+    flex: 0.6;
+    margin-left: 20px;
+}
+
+.refresh-button:hover {
+    cursor: pointer;
 }

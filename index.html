@@ -9,17 +9,23 @@
     </head>
     <body>
         <section id="name-section">
+            <h1 class="label-name">Names</h1>
             <div class="name-container">
-                <p>First Name:</p>
-                <p class="generated-name">name generated</p>
-                <button class="refresh-button">button</button>
+                <p class="label-name">First Name:</p>
+                <p class="generated-name" id="first-name">name generated</p>
+                <button class="refresh-button" id="first-name-button">Randomise</button>
             </div>
-
-            
-            <p class="name-container">Middle Name:</p>
-            <p class="name-container">Last Name:</p>
+            <div class="name-container">
+                <p class="label-name">Middle Name:</p>
+                <p class="generated-name" id="middle-name">name generated</p>
+                <button class="refresh-button" id="middle-name-button">Randomise</button>
+            </div>
+            <div class="name-container">
+                <p class="label-name">Last Name:</p>
+                <p class="generated-name" id="last-name">name generated</p>
+                <button class="refresh-button" id="last-name-button">Randomise</button>
+            </div>
         </section>
-        
-
+        <script src="script.js" defer></script>
     </body>
 </html>
