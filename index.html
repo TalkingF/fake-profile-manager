@@ -9,7 +9,7 @@
     </head>
     <body>
         <section id="name-section">
-            <h1 class="label-name">Names</h1>
+            <p class="name-title">Names</p>
             <div class="name-container">
                 <p class="label-name">First Name:</p>
                 <p class="generated-name" id="first-name">name generated</p>
@@ -24,6 +24,20 @@
                 <p class="label-name">Last Name:</p>
                 <p class="generated-name" id="last-name">name generated</p>
                 <button class="refresh-button" id="last-name-button">Randomise</button>
+            </div>
+        </section>
+
+        <section id="age-section">
+            <div class="age-container">
+                <div class="age-information-container">
+                    <p class="age-title">Age:</p>
+                    <p id="age">age generated</p>
+                </div>
+                <div class="age-button-container">
+                    <button class="age-button" id="adult-button">Adult</button>
+                    <button class="age-button" id="child-button">Child</button>
+                </div>
+
             </div>
         </section>
         <script src="script.js" defer></script>

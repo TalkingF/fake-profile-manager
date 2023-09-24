@@ -26,12 +26,26 @@ const generateLast = async file => {
     document.getElementById("last-name").innerHTML = name;
 }
 
-//initial name generation
+function generateAgeChildInclusive() {
+    const age = Math.floor(Math.random() * 18);
+    document.getElementById("age").innerHTML = age;
+}
+
+function generateAgeAdultExclusive() {
+    const age = Math.floor(Math.random() * (120 - 18) + 18);
+    document.getElementById("age").innerHTML = age;
+}
+
+//initial random generation
+
 generateFirst("names/firstnames.txt");
 generateMiddle("names/middlenames.txt");
 generateLast("names/lastnames.txt");
+generateAgeAdultExclusive();
 
 //event listeners
-document.getElementById("first-name-button").addEventListener("click", ()=>generateFirst("names/firstnames.txt"));
-document.getElementById("middle-name-button").addEventListener("click", ()=>generateMiddle("names/middlenames.txt"));
-document.getElementById("last-name-button").addEventListener("click", ()=>generateLast("names/lastnames.txt"));
+document.getElementById("first-name-button").addEventListener("click", ()=> generateFirst("names/firstnames.txt"));
+document.getElementById("middle-name-button").addEventListener("click", ()=> generateMiddle("names/middlenames.txt"));
+document.getElementById("last-name-button").addEventListener("click", ()=> generateLast("names/lastnames.txt"));
+document.getElementById("adult-button").addEventListener("click", () => generateAgeAdultExclusive());
+document.getElementById("child-button").addEventListener("click", () => generateAgeChildInclusive());

@@ -1,7 +1,6 @@
 :root {
     --primary: rgb(45, 45, 72);
     --secondary: rgb(255,255,255);
-
 }
 
 body {
@@ -28,6 +27,11 @@ body {
     display: flex;
 }
 
+.name-title {
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
 .refresh-button {
     height: 40px;
     align-self: center;
@@ -35,6 +39,10 @@ body {
     margin-right: 10px;
     background-color: var(--secondary);
     border: none;
+}
+
+.refresh-button:hover {
+    cursor: pointer;
 }
 
 .generated-name {
@@ -47,6 +55,49 @@ body {
     margin-left: 20px;
 }
 
-.refresh-button:hover {
-    cursor: pointer;
+#age-section {
+    margin: 4px;
+    border: solid;
+    border-radius: 8px;
 }
+
+.age-container {
+    margin: 8px 4px;
+    font-size: 1.3rem;
+    border: solid;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.age-title {
+    margin-left: 20px;
+    font-size: 1.3rem;
+    flex: 1;
+}
+
+.age-button {
+    height: 40px;
+    align-self: center;
+    flex: 1;
+    margin-right: 10px;
+    background-color: var(--secondary);
+    border: none;
+}
+
+#age {
+    flex: 0.6;
+
+}
+
+.age-information-container {
+    display: flex;
+    flex: 1;
+
+}
+
+.age-button-container {
+    display: flex;
+    flex: 1;
+
+}
+

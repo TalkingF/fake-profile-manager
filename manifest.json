@@ -10,7 +10,9 @@
         "default_title": "Generator"
     },
     "icons": {
-        "128": "fake_profile_128x128"
+        "128": "assets/fake_profile_128x128.png",
+        "48": "assets/fake_profile_48x48.png",
+        "16":  "assets/fake_profile_16x16.png"
     }
   
 }
